@@ -20,6 +20,40 @@ html {
 body {
   box-sizing: border-box; }
 
+.logo-text {
+  font-family: "Great Vibes", cursive;
+  color: white; }
+
+.heading-1 {
+  font-family: "Pacifico", cursive;
+  color: black; }
+  .heading-1--white {
+    color: white; }
+
+.heading-2 {
+  font-family: "Oswald", sans-serif;
+  color: black; }
+  .heading-2--light {
+    font-weight: 300; }
+  .heading-2--med {
+    font-weight: 400; }
+  .heading-2--bold {
+    font-weight: 600; }
+  .heading-2--white {
+    color: white; }
+
+.body-text {
+  font-family: "Roboto", sans-serif;
+  color: black; }
+  .body-text--light {
+    font-weight: 300; }
+  .body-text--med {
+    font-weight: 500; }
+  .body-text--bold {
+    font-weight: 700; }
+  .body-text--white {
+    color: white; }
+
 .u-mb-small {
   margin-bottom: 1.5rem; }
 
