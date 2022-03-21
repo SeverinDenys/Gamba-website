@@ -20,6 +20,11 @@ html {
 body {
   box-sizing: border-box; }
 
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(2, minmax(min-content, 60rem)) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh min-content; }
+
 .logo-text {
   font-family: "Great Vibes", cursive;
   color: white; }
@@ -65,3 +70,33 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.header {
+  grid-column: full-start / full-end;
+  background: url(../images/bg-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-template-rows: min-content 1fr minmax(6rem, min-content) 1fr;
+  padding: 5rem; }
+  .header__logo {
+    font-size: 5rem;
+    grid-column: 1 / span 1;
+    justify-self: flex-start; }
+  .header__heading-main {
+    font-size: 10rem;
+    grid-column: 1 / -1;
+    justify-self: center; }
+  .header__heading-secondary {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center; }
+  .header__btn {
+    cursor: pointer;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: flex-start; }
