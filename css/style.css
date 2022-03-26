@@ -168,3 +168,28 @@ body {
       grid-column: 1 / 2; }
     .about__info--2, .about__info--4 {
       grid-column: 3 / 4; }
+
+.caption {
+  grid-column: full-start / full-end;
+  background: url(../images/bg-caption.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 10rem;
+  border: 0.5rem solid white;
+  outline: 0.5rem solid white;
+  outline-offset: -8rem; }
+  .caption__main-heading-sub {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #44bd32;
+    letter-spacing: 0.4rem; }
+  .caption__main-heading {
+    font-size: 8rem;
+    letter-spacing: 0.4rem; }
+  .caption__secondary-heading {
+    font-size: 2rem;
+    text-transform: uppercase; }
