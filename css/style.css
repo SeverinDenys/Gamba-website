@@ -193,3 +193,24 @@ body {
   .caption__secondary-heading {
     font-size: 2rem;
     text-transform: uppercase; }
+
+.products {
+  grid-column: center-start / center-end;
+  display: grid;
+  row-gap: 4rem; }
+  .products__main-heading {
+    font-size: 6rem;
+    justify-self: center; }
+  .products__nav-items {
+    display: flex;
+    justify-content: center; }
+  .products__nav-links {
+    list-style: none; }
+  .products__nav-link {
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500; }
+  .products__nav .active {
+    color: #85bc45; }

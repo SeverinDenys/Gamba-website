@@ -1,1 +1,30 @@
-  
+.products {
+  grid-column: center-start / center-end;
+  display: grid;
+  row-gap: 4rem;
+
+  &__main-heading {
+    font-size: 6rem;
+    justify-self: center;
+  }
+
+  &__nav {
+    &-items {
+      display: flex;
+      justify-content: center;
+    }
+    &-links {
+      list-style: none;
+    }
+    &-link {
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 2rem;
+      color: rgba($black, 0.5);
+      font-weight: 500;
+    }
+    .active {
+      color: $color-green-1;
+    }
+  }
+}
