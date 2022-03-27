@@ -214,3 +214,14 @@ body {
     font-weight: 500; }
   .products__nav .active {
     color: #85bc45; }
+  .products__container {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+  .products .product {
+    display: grid; }
+    .products .product__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      grid-column: 1 / -1; }
