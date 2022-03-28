@@ -38,11 +38,44 @@
 
   .product {
     display: grid;
+
+    &:hover {
+      box-shadow: 0rem 0.5rem 1rem rgba($black, 0.5);
+    }
     &__img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       grid-column: 1 / -1;
+    }
+
+    &__details {
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      grid-template-rows: repeat(3, 1fr);
+
+      justify-items: center;
+      align-items: center;
+
+      padding: 4rem 8rem;
+      gap: 0.5rem;
+
+      &__heading {
+        grid-column: 1 / -1;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+      }
+      &-price {
+        grid-column: 1 / -1;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $color-green-1;
+      }
+      &-icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $white-light;
+      }
     }
   }
 }
