@@ -219,9 +219,15 @@ body {
     gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
   .products .product {
-    display: grid; }
+    display: grid;
+    grid-template-rows: 25rem min-content; }
     .products .product:hover {
-      box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+      .products .product:hover .product__details {
+        background: #85bc45; }
+      .products .product:hover .product__details-price {
+        color: white; }
     .products .product__img {
       width: 100%;
       height: 100%;
@@ -247,4 +253,8 @@ body {
       .products .product__details-icon {
         width: 3rem;
         height: 3rem;
-        fill: rgba(255, 255, 255, 0.5); }
+        fill: rgba(255, 255, 255, 0.5);
+        transition: all 0.2s; }
+        .products .product__details-icon:hover {
+          transform: translateY(-0.3rem);
+          fill: white; }
