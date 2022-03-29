@@ -260,4 +260,35 @@ body {
           fill: white; }
 
 .deal {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: min-content min-content 30rem;
+  gap: 3rem;
+  align-items: center;
+  justify-items: center; }
+  .deal__heading {
+    font-size: 6rem;
+    grid-column: 1 / -1; }
+  .deal__info__heading {
+    font-size: 4rem; }
+  .deal__info__price {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.3); }
+    .deal__info__price span {
+      margin-left: 1rem;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #85bc45; }
+  .deal__info__description {
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.6); }
+    .deal__info__description-points li {
+      margin-left: 2.5rem; }
+  .deal__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .deal__img--main {
+    grid-column: 1 / 3; }
