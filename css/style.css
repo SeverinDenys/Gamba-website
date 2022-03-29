@@ -258,3 +258,6 @@ body {
         .products .product__details-icon:hover {
           transform: translateY(-0.3rem);
           fill: white; }
+
+.deal {
+  grid-column: center-start / center-end; }
